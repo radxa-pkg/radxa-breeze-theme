@@ -1,0 +1,17 @@
+[SddmGreeterTheme]
+Name=Radxa Breeze
+Description=Breeze Theme using Radxa artwork
+Description[fr]=Thème brise utilisant l’apparence Radxa
+Author=Adapted by the Radxa from the KDE Visual Design Group work
+Copyright=(c) 2024 Radxa Computer Co., Ltd
+License=CC-BY-SA
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/sddm/sddm
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email="Radxa Computer Co., Ltd" <dev@radxa.com>
+Theme-Id=radxa-breeze
+Theme-API=2.0

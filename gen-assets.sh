@@ -1,4 +1,5 @@
 #! /bin/bash
+set -e
 
 # KDE wallpaper generator
 wp_source="assets/" 

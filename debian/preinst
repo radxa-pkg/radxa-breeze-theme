@@ -5,6 +5,7 @@ case $1 in
     install|upgrade)
         conflicts="
         /etc/skel/.face
+        /usr/share/gnome-shell/gnome-shell-theme.gresource
         "
         for i in $conflicts
         do

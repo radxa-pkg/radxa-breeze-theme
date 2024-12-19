@@ -17,6 +17,7 @@ Priority: standard
 Depends: breeze,
          desktop-base,
          radxa-plymouth-theme,
+         sddm-theme-breeze,
          ${misc:Depends}
 Description: Branding for the desktop image.
  This package has wallpapers, logos.

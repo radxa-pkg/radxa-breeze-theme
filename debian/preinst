@@ -5,6 +5,8 @@ case $1 in
     install|upgrade)
         conflicts="
         /etc/skel/.face
+        /usr/share/gnome-shell/gnome-shell-theme.gresource
+        /usr/share/sddm/themes/breeze/theme.conf.user
         "
         for i in $conflicts
         do

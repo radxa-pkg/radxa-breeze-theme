@@ -6,3 +6,4 @@ src/usr/share/wallpapers/
 src/usr/share/images/
 src/usr/share/plasma/avatars/
 src/etc/skel/.face
+src/usr/share/gnome-shell/gnome-shell-theme.gresource

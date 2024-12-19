@@ -1,4 +1,5 @@
 #! /bin/bash
+set -e
 
 # KDE wallpaper generator
 wp_source="assets/" 
@@ -93,3 +94,13 @@ for svg in "${logos[@]}"; do
     fi
   done
 done
+
+cp src/usr/share/wallpapers/mountain/contents/images/3840x2160.svg src/gnome-shell/data/theme/background.svg
+cd src/gnome-shell
+cat debian/patches/series | xargs -d '\n' -I {} git apply "debian/patches/{}"
+cd data/theme
+glib-compile-resources ../gnome-shell-theme.gresource.xml
+cd -
+cat debian/patches/series | xargs -d '\n' -I {} git apply --reverse "debian/patches/{}"
+cd ../../
+cp src/gnome-shell/data/gnome-shell-theme.gresource src/usr/share/gnome-shell/gnome-shell-theme.gresource

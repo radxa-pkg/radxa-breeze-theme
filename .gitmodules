@@ -1,0 +1,4 @@
+[submodule "gnome-shell"]
+	path = src/gnome-shell
+	url = https://salsa.debian.org/gnome-team/gnome-shell.git
+	branch = debian/bookworm-security

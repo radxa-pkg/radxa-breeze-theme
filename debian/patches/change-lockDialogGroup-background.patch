@@ -1,1 +1,28 @@
-1
+diff --git a/src/gnome-shell/debian/patches/change-lockDialogGroup-background.patch b/src/gnome-shell/debian/patches/change-lockDialogGroup-background.patch
+--- a/src/gnome-shell/debian/patches/change-lockDialogGroup-background.patch
++++ b/src/gnome-shell/debian/patches/change-lockDialogGroup-background.patch
+@@ -0,0 +1,24 @@
++diff --git a/data/gnome-shell-theme.gresource.xml b/data/gnome-shell-theme.gresource.xml
++index 24b3be8db..82a36c66e 100644
++--- a/data/gnome-shell-theme.gresource.xml
+++++ b/data/gnome-shell-theme.gresource.xml
++@@ -21,5 +21,6 @@
++     <file>toggle-on-hc.svg</file>
++     <file>toggle-on-light.svg</file>
++     <file>workspace-placeholder.svg</file>
+++    <file>background.svg</file>
++   </gresource>
++ </gresources>
++diff --git a/data/theme/gnome-shell.css b/data/theme/gnome-shell.css
++index 6e4abda80..2b6ed0fed 100644
++--- a/data/theme/gnome-shell.css
+++++ b/data/theme/gnome-shell.css
++@@ -2774,7 +2774,7 @@ StScrollBar {
++   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
++ 
++ #lockDialogGroup {
++-  background-color: #232323; }
+++  background: #2e3436 url(resource:///org/gnome/shell/theme/background.svg); }
++ 
++ #unlockDialogNotifications StButton#vhandle, #unlockDialogNotifications StButton#hhandle {
++   background-color: rgba(48, 48, 48, 0.3); }
